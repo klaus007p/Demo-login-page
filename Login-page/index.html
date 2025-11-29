@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+
+    <div class="animated-bg"></div>
+
+    <div class="login-container">
+        <h2>Welcome Back</h2>
+        <p>Please login to continue</p>
+
+        <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password">
+            <div class="strength" id="strengthBar"></div>
+        </div>
+
+        <p class="forgot" id="forgotBtn">Forgot Password?</p>
+
+        
+        <div class="captcha-box">
+            <p class="captcha-title"><i class="fa-solid fa-shield-halved"></i> Prove you're human</p>
+
+            <div class="slider-captcha">
+                <div class="track"></div>
+                <div class="thumb" id="sliderThumb">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <p class="captcha-text" id="captchaText">Slide to verify</p>
+            </div>
+        </div>
+
+        <button id="loginBtn" disabled>Login</button>
+    </div>
+
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Reset Password</h3>
+            <p>Enter your email to receive reset instructions:</p>
+
+            <input type="email" id="resetEmail" placeholder="Email address">
+
+            <button id="sendReset">Send Reset Link</button>
+            <button class="close" id="closeModal">Close</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
